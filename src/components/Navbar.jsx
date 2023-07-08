@@ -1,7 +1,9 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 import {useCookies } from "react-cookie";
+import { useAuth0 } from "@auth0/auth0-react";
 const Navbar = (props) => {
+    const { isAuthenticated,loginWithRedirect,logout } = useAuth0();
     const [cookie, setCookie] = useCookies(["pradeep"])
     // const handelSubmit = async (event) => {
     //     event.preventDefault();
@@ -81,6 +83,10 @@ const Navbar = (props) => {
                 <NavLink to="/signin" > signin</NavLink>
                 <button onClick={logoutEvent}> logout</button>
                 <button onClick={logoutOfAllEvent}> logoutOfAll</button>
+                {/* {
+                
+                    isAuthenticated ?  (<button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Log Out</button>):(<button onClick={() => loginWithRedirect()}>Log In</button>) 
+                } */}
             </div>
          
         </>
