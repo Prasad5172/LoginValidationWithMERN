@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="signup1.css">
+  <link rel="stylesheet" href="signup2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+
+
+<body>
+<div id="form">
+  <div class="container">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-md-8 col-md-offset-2">
+      <div id="userform">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <li class="active"><a href="#signup"  role="tab" data-toggle="tab">Sign up</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active in" id="signup">
+            <h2 class="text-uppercase text-center"> Sign Up for Free</h2>
+                <form  action="/register" method="POST">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label>First Name<span class="req">*</span> </label>
+                        <input type="text" class="form-control" name="first_name" autocomplete="on">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label> Last Name<span class="req">*</span> </label>
+                        <input type="text" class="form-control" name="last_name"  autocomplete="on">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                  <div class="form-group">
+                    <label> Your Email<span class="req">*</span> </label>
+                    <input type="email" class="form-control" name="email"  autocomplete="on">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+
+                    <label> Your Phone<span class="req">*</span> </label>
+                    <input type="tel" class="form-control" name="phone"  autocomplete="on">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                        <label>Age<span class="req">*</span> </label>
+                        <input type="Number" class="form-control" name="age"  autocomplete="on">
+                        <p class="help-block text-danger"></p>
+                  </div>
+                  <div>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+
+                  </div>
+                  <div class="form-group">
+                    <label> Password<span class="req">*</span> </label>
+                    <input type="password" class="form-control" name="password"  autocomplete="on">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label> Checkpassword<span class="req">*</span> </label>
+                    <input type="password" class="form-control" name="checkpassword" autocomplete="on">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="mrgn-30-top">
+                    <button type="submit" class="btn btn-larger btn-block"/>
+                    Sign up
+                    </button>
+                  </div>
+                </form>
+          </div>
+
+
+
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container --> 
+</div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+<!-- partial -->
+  <script  src="./js/index.js"></script>
+
+</body>
+</html>
