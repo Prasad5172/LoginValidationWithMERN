@@ -36,7 +36,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SigninPage setCook={setCookie} />} />
         <Route path="/signup" element={<SignupPage />} />
-        <Route></Route>
       </Routes>
       <div>{message}</div>
     </>
