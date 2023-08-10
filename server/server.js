@@ -143,16 +143,6 @@ app.post("/signin", async (req,res) => {
         const isMatch = await bcrypt.compare(password,user.password)
         if(isMatch){
             const token = await user.generateAuthToken();
-
-
-            // send the token to front end file there we can set token using useCookie method and set the cookie .cookie get stored in the localstorage
-            // console.log(token)
-            // res.cookie("myCookieName", "cookieValue", {
-            //     httpOnly: true,
-            //     maxAge: 3600000,
-            //   });
-            //  res.json({token})
-
             const result = await fetch("http://localhost:8000/generateOTP",{
                 method:"POST",
                 headers:{
