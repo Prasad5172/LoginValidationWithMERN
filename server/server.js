@@ -155,9 +155,6 @@ app.post("/signin", async (req,res) => {
             }else{
                 res.status(400).send("failed to send otp")
             }
-
-           
-
         }else{
             console.log("password not match")
             res.send("password not match")
